@@ -14,57 +14,57 @@
 </head>
 <body>
  <div class="col-md-6 breakfast">
-    <h1>Breakfast</h1> 
-    <table id="food-list breakfast-list">
+    <h1>Breakfast</h1>
+    <table id="food-list breakfast-table">
       <thead>
         <tr><th>Name</th><th>Calories</th></tr>
       </thead>
       <tbody>
       </tbody>
       <tfoot>
-        <tr><th>Total Calories</th><th>100</th></tr>
-        <tr><th>Remaining Calories</th><th>100</th></tr>
+        <tr><th>Total Calories</th><th class="breakfasts-total total">100</th></tr>
+        <tr><th>Remaining Calories</th><th class="breakfasts-total remaining">100</th></tr>
       </tfoot>
     </table>
   </div>
   <div class="col-md-6 lunch-list">
     <h1>Lunch</h1>
-    <table>
+    <table id="food-list lunch-table">
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-          <tr><th>Total Calories</th><th>100</th></tr>
+          <tr><th>Total Calories</th><th class="lunch-total total">100</th></tr>
           <tr><th>Remaining Calories</th><th>100</th></tr>
         </tfoot>
       </table>
   </div>
   <div class="col-md-6 dinner-list">
     <h1>Dinner</h1>
-    <table>
+    <table id="food-list dinner-table">
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-          <tr><th>Total Calories</th><th>100</th></tr>
+          <tr><th>Total Calories</th><th class="dinner-total total">100</th></tr>
           <tr><th>Remaining Calories</th><th>100</th></tr>
         </tfoot>
       </table>
   </div>
   <div class="col-md-6 snacks-list">
     <h1>Snacks</h1>
-    <table>
+    <table id="food-list snack-table">
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-          <tr><th>Total Calories</th><th>100</th></tr>
+          <tr><th>Total Calories</th><th class="snack-total total">100</th></tr>
           <tr><th>Remaining Calories</th><th>100</th></tr>
         </tfoot>
       </table>
@@ -78,7 +78,7 @@
     <button class="col-md-4 col-md-offset-4" id="add-food">Lunch</button>
     <button class="col-md-4" id="add-food">Dinner</button>
     <button class="col-md-4 col-md-offset-4" id="add-food">Snacks</button>
-    
+
     <div id="food-filter">
       <label>Search by Name
         <input>
@@ -92,26 +92,20 @@
         </tbody>
         <tfoot>
           <tr><th>Total Calories</th><th>100</th></tr>
-          <tr><th>Remaining Calories</th><th>100</th></tr>
+          <tr><th>Remaining Calories</th><th></th></tr>
         </tfoot>
       </table>
   </div>
 
   <div class="col-md-6 totals-list">
     <h1>Totals</h1>
-    <table>
-        <thead>
-          <tr><th>Name</th><th>Calories</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
+    <table class="totals-table">
         <tfoot>
-          <tr><th>Goal Calories</th><th>100</th></tr>
-          <tr><th>Calories Consumed</th><th>100</th></tr>
-          <tr><th>Remaining Calories</th><th>100</th></tr>
+          <tr><th>Goal Calories</th><th class="total-calories goal">2000</th></tr>
+          <tr><th>Calories Consumed</th><th class="total-calories consumed"></th></tr>
+          <tr><th>Remaining Calories</th><th class="total-calories remaining"></th></tr>
         </tfoot>
       </table>
   </div>
 
 </body>
-
