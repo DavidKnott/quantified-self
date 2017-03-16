@@ -8,64 +8,65 @@
   <script src="./lib/foods.js"></script>
   <script src="./lib/filter_foods.js"></script>
   <script src="./lib/common.js"></script>
+  <script src="./lib/index.js"></script>
   <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="./lib/foods.css" >
   <link type="text/css" rel="stylesheet" href="./lib/common.css" >
 </head>
 <body>
- <div class="col-md-6 breakfast">
+ <div class="col-md-6 breakfast-list">
     <h1>Breakfast</h1>
-    <table id="food-list breakfast-table">
+    <table class="breakfast-table" id="food-list">
       <thead>
         <tr><th>Name</th><th>Calories</th></tr>
       </thead>
       <tbody>
       </tbody>
       <tfoot>
-        <tr><th>Total Calories</th><th class="breakfasts-total total">100</th></tr>
-        <tr><th>Remaining Calories</th><th class="breakfasts-total remaining">100</th></tr>
+        <tr><th class="total-calories">Total Calories</th><th class="total-calories" id="total">100</th></tr>
+        <tr><th class="remaining-calories">Remaining Calories</th><th class="remaining-calories" id="difference">100</th></tr>
       </tfoot>
     </table>
   </div>
   <div class="col-md-6 lunch-list">
     <h1>Lunch</h1>
-    <table id="food-list lunch-table">
+    <table class="lunch-table" id="food-list">
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-          <tr><th>Total Calories</th><th class="lunch-total total">100</th></tr>
-          <tr><th>Remaining Calories</th><th>100</th></tr>
+          <tr><th class="total-calories">Total Calories</th><th class="total-calories" id="total">100</th></tr>
+          <tr><th>Remaining Calories</th><th class="remaining-calories" id="difference">100</th></tr>
         </tfoot>
       </table>
   </div>
   <div class="col-md-6 dinner-list">
     <h1>Dinner</h1>
-    <table id="food-list dinner-table">
+    <table class="dinner-table" id="food-list">
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-          <tr><th>Total Calories</th><th class="dinner-total total">100</th></tr>
-          <tr><th>Remaining Calories</th><th>100</th></tr>
+          <tr><th class="total-calories">Total Calories</th><th class="total-calories" id="total">100</th></tr>
+          <tr><th>Remaining Calories</th><th class="remaining-calories" id="difference">100</th></tr>
         </tfoot>
       </table>
   </div>
   <div class="col-md-6 snacks-list">
     <h1>Snacks</h1>
-    <table id="food-list snack-table">
+    <table class="snack-table" id="food-list">
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
         <tbody>
         </tbody>
         <tfoot>
-          <tr><th>Total Calories</th><th class="snack-total total">100</th></tr>
-          <tr><th>Remaining Calories</th><th>100</th></tr>
+          <tr><th class="total-calories">Total Calories</th><th class="total-calories" id="total">100</th></tr>
+          <tr><th>Remaining Calories</th><th class="remaining-calories" id="difference">100</th></tr>
         </tfoot>
       </table>
   </div>
@@ -99,11 +100,11 @@
 
   <div class="col-md-6 totals-list">
     <h1>Totals</h1>
-    <table class="totals-table">
+    <table class="total-table" id="foods-list">
         <tfoot>
-          <tr><th>Goal Calories</th><th class="total-calories goal">2000</th></tr>
-          <tr><th>Calories Consumed</th><th class="total-calories consumed"></th></tr>
-          <tr><th>Remaining Calories</th><th class="total-calories remaining"></th></tr>
+          <tr><th class="total-calories">Goal Calories</th><th class="total-calories" id="goal-total">2000</th></tr>
+          <tr><th class="calories-consumed">Calories Consumed</th><th id="grand-total" class="calories-consumed"></th></tr>
+          <tr><th class="calories-remaining">Remaining Calories</th><th class="calories-remaining" id="remaining"></th></tr>
         </tfoot>
       </table>
   </div>
