@@ -40,6 +40,5 @@ describe('#create-form', function() {
       var caloriesValidationContent = $("#calories-field .validation-error").text();
       assert.equal(caloriesValidationContent, "");
     });
-
   });
 });
